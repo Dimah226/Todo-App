@@ -1,3 +1,5 @@
+import "./style.css";
+
 let categories = [
   {
     title: "Personal",
