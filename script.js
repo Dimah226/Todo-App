@@ -35,7 +35,7 @@ let categories = [
 
 let tasks = [];
 
-// Define functions
+
 const saveLocal = () => {
   localStorage.setItem("tasks", JSON.stringify(tasks));
 };
@@ -232,7 +232,7 @@ const addTask = (e) => {
   }
 };
 
-// Initialize variables and DOM elements
+
 let selectedCategory = categories[0];
 const categoriesContainer = document.querySelector(".categories");
 const screenWrapper = document.querySelector(".wrapper");
@@ -251,7 +251,7 @@ const addBtn = document.querySelector(".add-btn");
 const cancelBtn = document.querySelector(".cancel-btn");
 const totalTasks = document.getElementById("total-tasks");
 
-// Attach event listeners
+
 menuBtn.addEventListener("click", ()=>{
   alert("This is a generic button")
 });
@@ -264,7 +264,7 @@ blackBackdrop.addEventListener("click", toggleAddTaskForm);
 addBtn.addEventListener("click", addTask);
 cancelBtn.addEventListener("click", toggleAddTaskForm);
 
-// Render initial state
+
 getLocal();
 renderCategories()
 categories.forEach((category) => {
