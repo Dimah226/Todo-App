@@ -93,7 +93,7 @@ const renderCategories = () => {
       selectedCategory = category;
       updateTotals();
       categoryTitle.innerHTML = category.title;
-      categoryImg.src = `images/${category.img}`;
+      categoryImg.src = `${category.img}`;
       renderTasks();
     });
 
