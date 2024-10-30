@@ -1,37 +1,45 @@
 import "./style.css";
+import img from "./images/boy.png"
+import img6 from "./images/dumbbell.png"
+import img2 from "./images/briefcase.png"
+import img3 from "./images/shopping.png"
+import img4 from "./images/web-design.png"
+import img5 from "./images/healthcare.png"
+import img7 from "./images/education.png"
+import img8 from "./images/saving.png"
 
 let categories = [
   {
     title: "Personal",
-    img: "boy.png",
+    img: img,
   },
   {
     title: "Work",
-    img: "briefcase.png",
+    img: img2,
   },
   {
     title: "Shopping",
-    img: "shopping.png",
+    img: img3,
   },
   {
     title: "Coding",
-    img: "web-design.png",
+    img: img4,
   },
   {
     title: "Health",
-    img: "healthcare.png",
+    img: img5,
   },
   {
     title: "Fitness",
-    img: "dumbbell.png",
+    img: img6,
   },
   {
     title: "Education",
-    img: "education.png",
+    img: img7,
   },
   {
     title: "Finance",
-    img: "saving.png",
+    img: img8,
   },
 ];
 
@@ -91,7 +99,7 @@ const renderCategories = () => {
 
     div.innerHTML = `
                   <div class="left">
-                <img src="images/${category.img}"
+                <img src="${category.img}"
                  alt="${category.title}"
                   />
                 <div class="content">
